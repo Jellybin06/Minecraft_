@@ -1,0 +1,11 @@
+name: PhysicalFighters
+version: '1.0-SNAPSHOT'
+main: org.jeongbin.physicalfighters.PhysicalFighters
+api-version: '1.20'
+commands:
+  va:
+    description: This is a demo command.
+    usage: /<command>
+  showmethemoney:
+    description: This is a demo command.
+    usage: /<command>
