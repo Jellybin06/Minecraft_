@@ -3,6 +3,7 @@ package org.jeongbin.physicalfighters;
 import org.jeongbin.physicalfighters.MainModule.CommandManager;
 import org.jeongbin.physicalfighters.MainModule.EventManager;
 import org.jeongbin.physicalfighters.MajorModule.AbilityList;
+import org.jeongbin.physicalfighters.MinerModule.ACC;
 import org.jeongbin.physicalfighters.Script.MainScripter;
 import java.util.ArrayList;
 import java.util.Timer;
@@ -65,6 +66,9 @@ public class PhysicalFighters extends org.bukkit.plugin.java.JavaPlugin
     public void onEnable()
     {
         org.jeongbin.physicalfighters.MinerModule.ACC.DefaultItem = Material.IRON_INGOT;
+        if (ACC.DefaultItem == Material.IRON_INGOT) {
+            log.info("기본값이 철로 변경되었습니다.");
+        }
 
         log.info(String.format("(!)빌드정보 " + String.valueOf(BuildNumber),
                 new Object[0]));
